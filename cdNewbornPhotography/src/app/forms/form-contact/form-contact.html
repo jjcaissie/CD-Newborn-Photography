@@ -1,0 +1,59 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <mat-label>Full Name*</mat-label>
+    <input matInput formControlName="fullName" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Phone Number*</mat-label>
+    <input matInput formControlName="phoneNumber" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email*</mat-label>
+    <input matInput formControlName="email" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>City/Town*</mat-label>
+    <input matInput formControlName="cityTown" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>DUE DATE / DATE OF BIRTH</mat-label>
+    <input
+      matInput
+      [matDatepicker]="picker"
+      id="birthDate"
+      type="text"
+      formControlName="birthDate"
+    />
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Type Of Session</mat-label>
+    <mat-select formControlName="typeOfSession">
+      <mat-option>Newborn Only</mat-option>
+      <mat-option>Newborn + Parents</mat-option>
+      <mat-option>Newborn + Family</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Message/Anything you'd like me to know?</mat-label>
+    <textarea
+      matInput
+      id="message"
+      type="text"
+      rows="3"
+      formControlName="message"
+    ></textarea>
+  </mat-form-field>
+
+  <button matButton="outlined" [disabled]="!contactForm.valid">
+    SEND MESSAGE
+  </button>
+</form>
