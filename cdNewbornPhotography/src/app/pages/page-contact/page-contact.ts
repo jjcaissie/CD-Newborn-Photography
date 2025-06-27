@@ -7,4 +7,8 @@ import { FormContact } from '../../forms/form-contact/form-contact';
   templateUrl: './page-contact.html',
   styleUrl: './page-contact.scss',
 })
-export class PageContact {}
+export class PageContact {
+  accountName = 'cdnewbornphotography';
+  email = this.accountName + '@gmail.com';
+  instagramLink = 'https://www.instagram.com/' + this.accountName;
+}

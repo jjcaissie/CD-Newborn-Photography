@@ -1,19 +1,15 @@
 @use '@angular/material' as mat;
 
-form {
-  color-scheme: light dark;
-  @include mat.theme((
-    color: (
-        primary: mat.$violet-palette,
-        tertiary: mat.$orange-palette,
-    ),
-    typography: Roboto,
-    density: 0
-  ));
-}
 
-form > * {
+form {
+display: flex;
+flex-direction: column;
+> * {
     width: 100%;
     gap: 10px;
   }
+}
   
+  mat-form-field{
+    margin: 4px;
+  }

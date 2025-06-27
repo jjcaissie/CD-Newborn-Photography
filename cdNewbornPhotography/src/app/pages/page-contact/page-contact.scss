@@ -1,0 +1,15 @@
+.center-text{
+    text-align: center;
+    text-justify: auto;
+}
+
+.horizontal-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+
+.vertical-flex{
+    display: flex;
+    flex-direction: column;
+}
