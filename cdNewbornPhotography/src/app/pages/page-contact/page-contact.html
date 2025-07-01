@@ -1,8 +1,18 @@
 <div class="horizontal-flex">
   <div class="vertical-flex">
-    <h1>START YOUR SESSION INQUIRY</h1>
-    <p>{{ this.email }}</p>
-    <a target="_blank" href="{{this.instagramLink}}">{{ this.accountName }}</a>
+    <h1>START <br>YOUR <br>SESSION <br>INQUIRY</h1>
+    <p class="email">{{ this.email }}</p>
+    <span class="with-icon">
+      <img
+        src="./../../../assets/icons/instagram-svgrepo-com.svg"
+        width="32"
+        height="32"
+        alt="Instagram"
+      />
+      <a target="_blank" href="{{this.instagramLink}}"
+        >{{ this.accountName }}</a
+      >
+    </span>
   </div>
   <div class="vertical-flex">
     <p class="center-text">

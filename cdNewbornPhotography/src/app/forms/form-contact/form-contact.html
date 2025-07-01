@@ -1,5 +1,4 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-  
   <mat-label>Full Name*</mat-label>
   <mat-form-field>
     <input matInput formControlName="fullName" />
@@ -54,7 +53,7 @@
     ></textarea>
   </mat-form-field>
 
-  <button matButton="outlined" [disabled]="!contactForm.valid">
+  <button [disabled]="!contactForm.valid">
     SEND MESSAGE
   </button>
 </form>
