@@ -11,27 +11,28 @@
 }
 
 .divider {
-    width: 90%;
     margin: 2rem auto;
     border: none;
     border-top: 2px solid #444;
+    width: 475px;
 }
 
-.nav-bar {
+nav {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
     font-size: 1rem;
     text-transform: lowercase;
     letter-spacing: 0.05em;
+    margin-bottom: 75px;
 }
 
-.nav-bar a {
+nav a {
     text-decoration: none;
     color: #222;
     font-family: 'Playfair Display', serif;
 }
 
-.nav-bar a:hover {
+nav a:hover {
   text-decoration: underline;
 }

@@ -6,6 +6,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { provideNativeDateAdapter } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
+import { AppConstants } from '../../shared/constants/app.constants';
+import { Email } from '../../shared/contacts/email';
 
 @Component({
   standalone: true,
@@ -24,7 +26,6 @@ import { MatButtonModule } from '@angular/material/button';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FormContact {
-  @Input() email = '';
   contactForm = new FormGroup({
     fullName: new FormControl(''),
     phoneNumber: new FormControl(''),
@@ -36,13 +37,7 @@ export class FormContact {
   });
 
   onSubmit() {
-    console.log(JSON.stringify(this.contactForm.value));
-    const subject = 'Newborn Photography Session';
-    const body = JSON.stringify(this.contactForm.value);
-    const mailtoLink = `mailto:${this.email}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-
-    // window.location.href = mailtoLink;
+    const body = JSON.stringify(this.contactForm.value)
+    Email.mailTo(body)
   }
 }

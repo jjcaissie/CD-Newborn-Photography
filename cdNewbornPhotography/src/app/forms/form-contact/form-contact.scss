@@ -8,6 +8,10 @@ form {
   > * {
     gap: 10px;
   }
+
+  > :last-child {
+    margin-top: 35px;
+  }
 }
   
 mat-form-field{

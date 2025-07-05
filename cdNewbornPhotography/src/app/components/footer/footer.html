@@ -1,1 +1,27 @@
-<p>footer works!</p>
+<footer>
+  <span class="socials">
+    <img
+      src="./../../../assets/icons/instagram-svgrepo-com.svg"
+      width="32"
+      height="32"
+      alt="Instagram"
+      (click)="instagram.openInstagram()"
+    />
+    <img
+      src="./../../../assets/icons/mail-svgrepo-com.svg"
+      width="32"
+      height="32"
+      alt="Email"
+      (click)="email.mailTo()"
+    />
+  </span>
+  <div class="center-text">
+    <p>
+      &#169; {{ year }} &#8226; CDNewbornPhotography &#8226; ALL RIGHTS RESERVED
+    </p>
+    <p>EMAIL: {{appConstants.EMAIL}}</p>
+    <p>BOSTON, MA Candace Deleon Newborn Photography</p>
+  </div>
+</footer>
+<div style="height: 50px;"></div>
+

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { FormContact } from '../../forms/form-contact/form-contact';
+import { AppConstants } from '../../shared/constants/app.constants';
+import { Email } from '../../shared/contacts/email';
+import { Instagram } from '../../shared/contacts/instagram';
 
 @Component({
   selector: 'app-page-contact',
@@ -8,7 +11,7 @@ import { FormContact } from '../../forms/form-contact/form-contact';
   styleUrl: './page-contact.scss',
 })
 export class PageContact {
-  accountName = 'cdnewbornphotography';
-  email = this.accountName + '@gmail.com';
-  instagramLink = 'https://www.instagram.com/' + this.accountName;
+  appConstants = AppConstants;
+  instagram=Instagram
+  email=Email
 }
