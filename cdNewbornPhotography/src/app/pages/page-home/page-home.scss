@@ -1,8 +1,38 @@
 .margins{
-    margin-left: 20px;
-    margin-right: 40px;
+    margin:auto;
+    max-width: 100vw;
 }
 
 button{
+    margin-top: 20px;
     padding: 5px 60px 5px 60px;
+}
+
+img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-height: 50vh;
+    max-width: 50vw;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.vertical-flex{
+    margin-left:2px;
+    margin-right:2px;
+}
+
+.horizontal-flex{
+    gap: 10px;
+}
+
+@media(max-width: 480){
+    .margins{
+        width:95%
+    }
+}
+
+@media(min-width: 1200px){
+    .margins{
+        width: 1280px;
+    }
 }

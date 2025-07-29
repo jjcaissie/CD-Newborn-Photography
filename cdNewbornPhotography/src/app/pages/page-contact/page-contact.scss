@@ -58,3 +58,29 @@
         }
     }
   }
+
+  @media(max-width: 1140px){
+    .horizontal-flex{
+        flex-direction: column;
+    }
+    .header-text{
+        text-align: center;
+    }
+    br{
+        display: none;
+    }
+    h1{
+        font-size:50px;
+    }
+    .contacts{
+        flex-direction: row;
+        justify-content: center;
+    }
+  }
+
+  @media(max-width: 570px){
+    .contacts{
+        flex-direction: column;
+        justify-content: center;
+    }
+  }

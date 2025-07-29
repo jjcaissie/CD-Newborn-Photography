@@ -1,0 +1,13 @@
+@media(min-width: 1200px){
+    .margins{
+        margin: auto;
+        width: 1280px;
+    }
+}
+
+img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-height: 60vh;
+    max-width: 50vw;
+}

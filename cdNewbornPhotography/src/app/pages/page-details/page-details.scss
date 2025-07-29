@@ -36,3 +36,10 @@ h2, .center-text{
         flex-direction: column;
     }
 }
+
+@media(min-width: 1200px){
+    .margins{
+        margin: auto;
+        width: 1280px;
+    }
+}
