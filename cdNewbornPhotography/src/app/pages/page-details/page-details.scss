@@ -3,8 +3,12 @@ button {
     margin-bottom: 40px;
 }
 
-h2, .center-text{
+h2{
     text-align: center;
+    font-family: "Monsieur La Doulaise", cursive;
+    font-size: 60px;
+    font-weight: 120;
+    margin: 0;
 }
 
 .button-container{
@@ -29,6 +33,11 @@ h2, .center-text{
 .margins{
     margin-left: 30px;
     margin-right: 30px;
+}
+
+h1{
+    font-family: "Cinzel", serif;
+    font-weight: 100;
 }
 
 @media (orientation: portrait){

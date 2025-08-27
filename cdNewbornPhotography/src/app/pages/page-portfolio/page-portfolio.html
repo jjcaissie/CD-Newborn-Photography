@@ -1,28 +1,30 @@
-<div class="margins">
-  <div class="grid-item" *ngFor="let img of images">
-    <img [src]="img" (click)="openOverlay(img)" alt="Grid image" />
+<div class="portfolio-container">
+  <h1 class>portfolio</h1>
+  <div class="margins">
+    <div class="grid-item" *ngFor="let img of images">
+      <img [src]="img" (click)="openOverlay(img)" alt="Grid image"/>
+    </div>
   </div>
-</div>
-
-<div class="overlay" *ngIf="selectedImage" (click)="closeOverlay()">
-  <img
-    [src]="selectedImage"
-    (click)="toggleZoom($event)"
-    [class.zoomed]="zoomed"
-    [style.transform-origin]="transformOrigin"
-    [style.transform]="
-        zoomed
-          ? 'scale(2) translate(' + translateX + 'px, ' + translateY + 'px)'
-          : 'none'
-      "
-    (mousedown)="onDragStart($event)"
-    (touchstart)="onDragStart($event)"
-    (mousemove)="onDragMove($event)"
-    (touchmove)="onDragMove($event)"
-    (mouseup)="onDragEnd()"
-    (mouseleave)="onDragEnd()"
-    (touchend)="onDragEnd()"
-    alt="Zoomable image"
-  />
-  <button class="close-btn" (click)="closeOverlay()">✕</button>
+  <div class="overlay" *ngIf="selectedImage" (click)="closeOverlay()">
+    <img
+      [src]="selectedImage"
+      (click)="toggleZoom($event)"
+      [class.zoomed]="zoomed"
+      [style.transform-origin]="transformOrigin"
+      [style.transform]="
+          zoomed
+            ? 'scale(2) translate(' + translateX + 'px, ' + translateY + 'px)'
+            : 'none'
+        "
+      (mousedown)="onDragStart($event)"
+      (touchstart)="onDragStart($event)"
+      (mousemove)="onDragMove($event)"
+      (touchmove)="onDragMove($event)"
+      (mouseup)="onDragEnd()"
+      (mouseleave)="onDragEnd()"
+      (touchend)="onDragEnd()"
+      alt="Zoomable image"
+    />
+    <button class="close-btn" (click)="closeOverlay()">✕</button>
+  </div>
 </div>
