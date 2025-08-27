@@ -1,10 +1,10 @@
 {
   "routes": {
-    "/angular-app": {},
-    "/angular-app/about": {},
-    "/angular-app/contact": {},
-    "/angular-app/details": {},
-    "/angular-app/home": {},
-    "/angular-app/portfolio": {}
+    "/CD-Newborn-Photography": {},
+    "/CD-Newborn-Photography/about": {},
+    "/CD-Newborn-Photography/contact": {},
+    "/CD-Newborn-Photography/details": {},
+    "/CD-Newborn-Photography/home": {},
+    "/CD-Newborn-Photography/portfolio": {}
   }
 }

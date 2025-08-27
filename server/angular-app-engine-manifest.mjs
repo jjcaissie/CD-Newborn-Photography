@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/angular-app',
+  basePath: '/CD-Newborn-Photography',
   supportedLocales: {
   "en-US": ""
 },
